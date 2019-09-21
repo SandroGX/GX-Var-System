@@ -1,0 +1,14 @@
+{
+  "name": "com.gx.varsystem",
+  "version": "0.0.0",
+  "displayName": "GX Var System",
+  "description": "System of variable containers",
+  "unity": "2019.1",
+  "keywords": [ "GX", "var" ],
+  "author": 
+  {
+    "name": "SandroGX",
+    "email": "sandroalemflor@hotmail.com",
+    "discord": "SandroGX#6938"
+  }
+}
