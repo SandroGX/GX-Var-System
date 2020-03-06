@@ -1,0 +1,25 @@
+{
+    "name": "Unity.GX.VarSystem.Editor",
+    "references": [
+        "GUID:72082d6c3d8682a49b51c8e49495904c",
+        "GUID:cb75b2638942e3144b0a8446c6baea65",
+        "GUID:b278b75b487a73a47897c9d20c15ff0d"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+		{
+            "name": "com.gx.tools",
+            "expression": "0.0.0",
+            "define": "TOOLS"
+        }
+	],
+    "noEngineReferences": false
+}

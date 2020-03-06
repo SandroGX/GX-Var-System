@@ -1,5 +1,5 @@
 {
-    "name": "Unity.GXVarSystem",
+    "name": "Unity.GX.VarSystem.Runtime",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
@@ -8,5 +8,12 @@
     "precompiledReferences": [],
     "autoReferenced": true,
     "defineConstraints": [],
-    "versionDefines": []
+    "versionDefines": [
+		{
+            "name": "com.gx.tools",
+            "expression": "0.0.0",
+            "define": "TOOLS"
+        }
+	],
+    "noEngineReferences": false
 }

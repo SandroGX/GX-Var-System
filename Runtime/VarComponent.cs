@@ -1,23 +1,32 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace GX.VarSystem
 {
-    public class VarComponent : Variable
+    [System.Serializable]
+    public class VarComponent : Variable<Component>
     {
-        public System.Type compType;
+        [HideInInspector]
+        public string compType;
 
         public override Variable Duplicate(object varHolder)
         {
             if (isStatic)
             {
-                if (va == null)
-
-                    return this;
+                if (value == null)
+                    value = ((Component)varHolder).GetComponent(GetVarType());
+                return this;
             }
 
             VarComponent v = CreateInstance<VarComponent>();
-            v.va = ((Component)varHolder).GetComponent(compType);
+            v.compType = compType;
+            v.value = ((Component)varHolder).GetComponent(GetVarType());
             return v;
+        }
+
+        public override Type GetVarType()
+        {
+            return Type.GetType(compType);
         }
     }
 }
